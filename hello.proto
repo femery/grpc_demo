@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option go_package = "example/another";
+
+service AnotherService {
+  rpc Hello(HelloRequest) returns (HelloReplqy);
+}
+
+message  HelloRequest {
+  string name = 1;
+}
+
+message  HelloReplqy {
+  string message = 1;
+}
